@@ -484,6 +484,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .work__container {
+    display: none;
+  }
+}
 .work__container {
   padding-bottom: 94px;
 }
