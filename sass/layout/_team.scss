@@ -1,33 +1,49 @@
 .team__container {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .team__list {
   display: flex;
-  margin-left: -30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .team__item {
+  width: 100%;
   background: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .team__desc {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .team__subtitle {
   font-weight: 500;
@@ -49,16 +65,16 @@
 .team__soc-list {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 .social__item {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
-  &:last-child {
-    margin-right: 0;
-  }
 }
-
+.team__img {
+  width: 100%;
+  height: inherit;
+}
 .social__link {
   text-decoration: none;
   width: 100%;
