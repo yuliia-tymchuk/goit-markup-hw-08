@@ -733,6 +733,13 @@ body {
 .footer__links {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__links {
     display: flex;
@@ -742,6 +749,11 @@ body {
 
 .address-container {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .address-container {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .address-container {
