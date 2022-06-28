@@ -57,6 +57,10 @@
     fill: var(--accent-color);
   }
 }
+.modal__icon-close {
+  position: absolute;
+  z-index: 2;
+}
 
 .modal__title {
   font-weight: 700;
