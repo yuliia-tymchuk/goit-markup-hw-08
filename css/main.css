@@ -149,6 +149,11 @@ body {
     height: 581px;
   }
 }
+@media screen and (max-height: 450px) {
+  .modal {
+    top: 100%;
+  }
+}
 
 .modal__close-btn {
   position: absolute;
