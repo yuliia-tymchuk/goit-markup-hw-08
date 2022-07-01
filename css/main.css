@@ -147,11 +147,10 @@ body {
   .modal {
     width: 528px;
     height: 581px;
-  }
-}
-@media screen and (max-height: 450px) {
-  .modal {
-    top: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -177,7 +176,7 @@ body {
 
 .modal__icon-close {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 
 .modal__title {

@@ -35,10 +35,6 @@
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
-  }
-  @media screen and (max-height: 450px) {
-    top: 100%;
-  }
 }
 .modal__close-btn {
   position: absolute;
@@ -62,7 +58,7 @@
 }
 .modal__icon-close {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 }
 
 .modal__title {
