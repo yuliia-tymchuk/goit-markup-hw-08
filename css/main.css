@@ -528,7 +528,7 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--primary-bg-color);
   padding-top: 48px;
   padding-bottom: 48px;
@@ -559,7 +559,7 @@ body {
   list-style: none;
 }
 
-.menu__item:not(last-child) {
+.menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -618,9 +618,10 @@ body {
 
 .menu__soc-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.menu__soc-item:not(last-child) {
+.menu__soc-item:not(:last-child) {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
