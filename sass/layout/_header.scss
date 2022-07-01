@@ -1,10 +1,22 @@
-.header__container {
-  // padding-top: 24px;
-  // padding-bottom: 24px;
+.header {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
   &.container {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.header_container {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -27,6 +39,10 @@
 .header__nav {
   display: none;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .header__item:not(:last-child) {
   margin-right: 50px;
@@ -47,10 +63,6 @@
 }
 .current {
   color: var(--accent-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
   &::after {
     content: "";
     position: absolute;
@@ -58,24 +70,47 @@
     border-radius: 2px;
     height: 4px;
     width: 100%;
-    bottom: -32px;
+    bottom: -34px;
     left: 0px;
+    @media screen and (min-width: 1200px) {
+      bottom: -32px;
+    }
   }
 }
 .contacts {
   margin-left: auto;
   display: none;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 .contacts__item {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   height: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contacts__item + .contacts__item {
   margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 .contacts__link {
   text-decoration: none;
@@ -96,6 +131,8 @@
 .contacts__icon {
   fill: var(--text-color);
   margin-right: 10px;
+  @media screen and (min-width: 768px) {
+  }
 }
 
 // Mobile-menu
@@ -115,6 +152,9 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 .mob-menu.is-hidden {
