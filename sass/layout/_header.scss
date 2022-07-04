@@ -217,17 +217,6 @@
 }
 .menu__current {
   color: var(--accent-color);
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    background: var(--accent-color);
-    border-radius: 2px;
-    height: 4px;
-    width: 100%;
-    bottom: -5px;
-    left: 0px;
-  }
 }
 .menu__contacts-list {
   margin-bottom: 64px;

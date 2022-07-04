@@ -20,6 +20,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    margin-bottom: 0;
   }
 }
 .address-container {
@@ -124,6 +125,7 @@
 .footer__subscribe {
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
+    text-align-last: left;
   }
 }
 .subscribe__title {

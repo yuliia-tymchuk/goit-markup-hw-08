@@ -575,17 +575,6 @@ body {
 
 .menu__current {
   color: var(--accent-color);
-  position: relative;
-}
-.menu__current::after {
-  content: "";
-  position: absolute;
-  background: var(--accent-color);
-  border-radius: 2px;
-  height: 4px;
-  width: 100%;
-  bottom: -5px;
-  left: 0px;
 }
 
 .menu__contacts-list {
@@ -1011,6 +1000,7 @@ body {
   .footer__links {
     display: flex;
     align-items: baseline;
+    margin-bottom: 0;
   }
 }
 
@@ -1129,6 +1119,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__subscribe {
     margin-left: 93px;
+    text-align-last: left;
   }
 }
 
